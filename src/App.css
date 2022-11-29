@@ -1,16 +1,5 @@
 .App {
-  @font-face {
-    font-family: "Montserrat";
-    src: url('./assets/fonts/static/Montserrat-Regular.ttf');
-    font-family: "Montserrat-thin";
-    src: url('./assets/fonts/static/Montserrat-Thin.ttf');
-    font-family: "Montserrat";
-    src: url('./assets/fonts/static/Montserrat-Regular.ttf');
-    font-family: "Montserrat-thin";
-    src: url('./assets/fonts/static/Montserrat-Thin.ttf');
-    
-  }
-  text-align: center;
+  font-family: "Montserrat"
 }
 
 .App-logo {
