@@ -23,7 +23,7 @@ export default function Category() {
                 </div>
                 <div class="categories__block fantasiya">
                   <div class="categories__block img-fantasiya">
-                    <img src={require('../../assets/images/icon-category/adventure.svg').default} />
+                    <img src={require('../../assets/images/icon-category/fantasiya.svg').default} />
                   </div>
                   <div class="categories__block text">
                     <p>Fantasiya</p>
@@ -33,7 +33,7 @@ export default function Category() {
               <div class="col">
                 <div class="categories__block arcade">
                   <div class="categories__block img-arcade">
-                    <img src={require('../../assets/images/icon-category/adventure.svg').default} />
+                    <img src={require('../../assets/images/icon-category/arcade.svg').default} />
                   </div>
                   <div class="categories__block text">
                     <p>Arcade-an</p>
@@ -42,7 +42,7 @@ export default function Category() {
 
                 <div class="categories__block archi">
                   <div class="categories__block img-archi">
-                    <img src={require('../../assets/images/icon-category/adventure.svg').default} />
+                    <img src={require('../../assets/images/icon-category/architectures.svg').default} />
                   </div>
                   <div class="categories__block text">
                     <p>Architectures</p>
