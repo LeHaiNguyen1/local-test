@@ -1,4 +1,34 @@
 #redeem{
+    .sweetPagination {
+        .paginationUL{
+            .pageItem{
+                .activeButton{
+                    &:hover{
+                        background:  #26ADCD;
+                    }
+                }
+            }
+        }
+    }
+        .sweetPagination{
+            ul li{
+                button{
+                    width: 25px;
+                    top: 542px;
+                    height: 25px;
+                    /* margin: 3px; */
+                    left: 145.59px;
+                    border-radius: 6.59px;
+                    margin: 10px;
+                    .pageButton{
+                        &:hover{
+                            background: #26ADCD;
+                        }
+                    }
+                }
+            }
+
+        }
     .redeem {
         position: relative;
     }

@@ -1,21 +1,20 @@
 import React from 'react'
 import './index.scss'
-
-export default function Popup(props) {
+export default function Popup({ detailId, toggle}) {    
     return (
         <section id='popup' className='popup'>
             <div className='container'>
                 <div className='row'>
-                    <div className='popup'>
+                    <div className='popup' key={detailId.id}>
                         <div className='popup_inner'>
-                            <span onClick={props.closePopup}>x</span>
+                            <span onClick={toggle}>x</span>
                             <div className='img d-flex justify-content-center align-content-center'>
-                                <img src={require('../../assets/images/banner-popup.svg').default} />
+                                <img src={detailId.img} className="w-100" />
                             </div>
                             <div className='row title d-flex justify-content-center align-items-center text-center'>
-                                <h1 className='text-light fs-4'>Pasukan Tentara</h1>
-                                <p>This game is very fun telling the story of a wise prince. this game is 3d and very visualization </p>
-                                <div classname="modal-content-block__btn">
+                                <div className='h1 text-light fs-4'>{detailId.title}</div>
+                                <p>{detailId.content}</p>
+                                <div className="modal-content-block__btn">
                                     <button>Play now</button>
                                 </div>
                             </div>
