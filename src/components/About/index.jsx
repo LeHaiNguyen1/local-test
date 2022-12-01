@@ -12,7 +12,7 @@ import Popup from "../Popup";
 const posts = [
     { id: "1", title: "Category ",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: Caro, icon: Primary, titleicon: "1289 Play times" },
     { id: "2", title: "Caro",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: flapbird, icon: Primary, titleicon: "1289 Play times" },
-    { id: "3", title: "chichbongbong",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: chichbongbong, icon: Primary, titleicon: "1289 Play times" },
+    { id: "3", title: "Bubble",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: chichbongbong, icon: Primary, titleicon: "1289 Play times" },
     { id: "4", title: "Goldegg",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: Goldegg, icon: Primary, titleicon: "1289 Play times" },
     { id: "5", title: "Primary",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: flapbird, icon: Primary, titleicon: "1289 Play times" }
 ];
