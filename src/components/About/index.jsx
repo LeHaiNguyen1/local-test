@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './index.scss'
 import Category from '../Category';
 import Caro from "../../assets/images/icon-category/caro.svg";
@@ -20,7 +20,8 @@ const posts = [
 
 export default function Redeem() {
     const [currentPageData, setCurrentPageData] = useState([]);
-    const [detailId, setDetailId] = useState()
+    const [detailId, setDetailId] = useState();
+    console.log(currentPageData)
     return (
         <>
             <section id="redeem" className="redeem">
@@ -28,9 +29,9 @@ export default function Redeem() {
                     <div className='row'>
                         {currentPageData.map((item) => {
                             return (
-                                <div className='col-6' >
+                                <div className='col-6' key={item.id}>
                                     <div class="redeem__grid">
-                                        <div class="redeem__item" key={item.id}>
+                                        <div class="redeem__item">
                                             <div class="redeem__item img">
                                                 <img src={item.img} alt="" className='w-100' onClick={() => setDetailId(item)} />
                                             </div>
