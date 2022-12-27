@@ -11,11 +11,11 @@ import SweetPagination from "sweetpagination";
 import Popup from "../Popup";
 
 const posts = [
-    { id: "1", title: "Chess Caro",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: Caro, icon: Primary, titleicon: "1289 Play times" },
-    { id: "2", title: "Flap Bird",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: flapbird, icon: Primary, titleicon: "1289 Play times" },
-    { id: "3", title: "Bubbles",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: chichbongbong, icon: Primary, titleicon: "1289 Play times" },
-    { id: "4", title: "Goldegg",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: Goldegg, icon: Primary, titleicon: "1289 Play times" },
-    { id: "5", title: "The Rock",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: therock, icon: Primary, titleicon: "1289 Play times" }
+    { id: "1", title: "Chess Caro",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: Caro, icon: Primary, titleicon: "1289 Play times", slug: '/caro' },
+    { id: "2", title: "Flap Bird",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: flapbird, icon: Primary, titleicon: "1289 Play times", slug: '/flapbird' },
+    { id: "3", title: "Bubbles",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: chichbongbong, icon: Primary, titleicon: "1289 Play times", slug: '/bubbles' },
+    { id: "4", title: "Goldegg",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: Goldegg, icon: Primary, titleicon: "1289 Play times", slug: '/goldegg' },
+    { id: "5", title: "The Rock",content: "This game is very fun telling the story of a wise prince. this game is 3d and very visualization", img: therock, icon: Primary, titleicon: "1289 Play times", slug: '/therock' }
 ];
 
 export default function Redeem() {
@@ -30,15 +30,15 @@ export default function Redeem() {
                         {currentPageData.map((item) => {
                             return (
                                 <div className='col-6' key={item.id}>
-                                    <div class="redeem__grid">
-                                        <div class="redeem__item">
-                                            <div class="redeem__item img">
+                                    <div className="redeem__grid">
+                                        <div className="redeem__item">
+                                            <div className="redeem__item img">
                                                 <img src={item.img} alt="" className='w-100' onClick={() => setDetailId(item)} />
                                             </div>
-                                            <div class="redeem__item title">
+                                            <div className="redeem__item title">
                                                 <div className='h3 text-light'>{item.title}</div>
                                             </div>
-                                            <div class="redeem__item desc text-light">
+                                            <div className="redeem__item desc text-light">
                                                 <img src={item.icon} alt="" className=''/>
                                                 <p>{item.titleicon}</p>
                                             </div>
